@@ -13,6 +13,10 @@
     ],
     "modules-right": [
         "workspaces",
+        "backlight",
+        "pulseaudio",
+        "cpu",
+        "temperature",
         "network",
         "battery"
     ],
@@ -26,6 +30,29 @@
         "rewrite": {
             "(.*) — (.*)": "$2"
         }
+    },
+    "backlight": {
+        "format": "󰃠 {percent}%",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "󰝟 Sessiz",
+        "scroll-step": 5
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": "{temp}°C\nRAM: {memUsed} / {memTotal} ({memPercent}%)"
+    },
+    "temperature": {
+        "hwmon-path": "/sys/class/thermal/thermal_zone0/temp",
+        "critical-threshold": 80,
+        "format": " {temperatureC}°C",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 14,
+        "spacing": 6
     },
     "workspaces": {
         "disable-scroll": true,

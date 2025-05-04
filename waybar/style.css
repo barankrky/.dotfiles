@@ -59,7 +59,7 @@ tooltip {
     letter-spacing: 1px;
 }
 
-#battery, #network {
+#battery, #network, #backlight, #pulseaudio, #cpu, #temperature {
     padding: 2px 8px;
     margin: 0 3px;
     background: #232634;
@@ -72,6 +72,30 @@ tooltip {
 
 #network {
     border: 1px solid #f9e2af;
+}
+
+#backlight {
+    border: 1px solid #f5c2e7;
+}
+
+#pulseaudio {
+    border: 1px solid #b4befe;
+}
+
+#cpu {
+    border: 1px solid #fab387;
+}
+
+#temperature {
+    border: 1px solid #f38ba8;
+}
+
+#tray {
+    padding: 2px 8px;
+    margin: 0 3px;
+    background: #232634;
+    border-radius: 6px;
+    border: 1px solid #a6adc8;
 }
 
 #battery > *, #network > * {
